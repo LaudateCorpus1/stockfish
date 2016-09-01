@@ -76,6 +76,7 @@ namespace {
     {
         States->push_back(StateInfo());
         pos.do_move(m, States->back(), pos.gives_check(m));
+        pos.calc_seen_before();
     }
   }
 
